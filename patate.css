@@ -1,0 +1,314 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 800px;
+    height: 800px;
+    border: 1px solid black;
+    position: relative;
+    overflow: hidden;
+    background-color: rgb(236, 234, 222);
+    z-index: -2;
+}
+
+.corps{
+    height: 400px;
+    width: 320px;
+    border-radius: 70% 70% 210px 220px;
+    background: radial-gradient(ellipse at -70% 140%,#86471c, #672f0c 60%, #f89348);
+}
+
+.ombre{
+    height: 400px;
+    width: 400px;
+    border-radius: 70% 70% 210px 220px;
+    background: radial-gradient(ellipse at 50% 90%, rgba(37, 37, 37, 0.555), transparent 70%);
+    transform: skew(0.7turn, 40deg);
+    position: absolute;
+    bottom: 220px;
+    right: 782px;
+    z-index: -1;
+}
+
+.chapeau{
+    position: absolute;
+    top: 95px;
+    right: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: rotate(-7deg);
+}
+.chapeauT{
+    width: 160px;
+    height: 126px;
+    background-color: black;
+    border-radius: 100% 100% 0 0 / 150px 150px 0 0;
+    background: linear-gradient(-4deg, rgb(54, 54, 54), rgb(0, 0, 0));
+
+}
+.chapeauB{
+    width: 600px;
+    height: 600px;
+
+    transform: rotate(45deg);
+    background: radial-gradient(ellipse at 0px 0px, transparent 20%,rgb(8, 8, 8) 20%, rgb(29, 29, 29) 21%, rgb(8, 8, 8) 24%, transparent 24%);
+    position: relative;
+    bottom: 50px;
+}
+
+.surcil{
+    width: 120px;
+    height: 150px;
+    
+    position: absolute;
+}
+
+
+.surcilG{
+    transform: rotateX(0deg) rotate(210deg);
+    background: radial-gradient(ellipse at 0px 0px, transparent 20%,rgb(63, 63, 63) 20%,  rgb(54, 54, 54) 25%, transparent 25%);
+    right: 385px;
+    top: 145px;
+}
+
+.surcilD{
+    transform: rotateX(180deg) rotate(36deg);
+    background: radial-gradient(ellipse at 0px 0px, transparent 20%,rgb(63, 63, 63) 20%,  rgb(54, 54, 54) 25%, transparent 25%);
+    right: 283px;
+    top: 133px;
+}
+
+.oeil{
+    height: 80px;
+    width: 50px;
+    border-radius: 50%;
+    background: radial-gradient(ellipse at 0% 80%,#ac9277, rgb(255, 243, 228));
+    position: absolute;
+    top: 290px;
+}
+
+.oeilG{
+    left: 355px;
+    transform: rotate(-5deg);
+}
+
+.oeilD{
+    right: 325px;
+    transform: rotate(-8deg);
+}
+
+.pupiles{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background: radial-gradient(ellipse at 100% 20%,#46463f, rgb(36, 37, 39));
+    position: relative;
+    top: -2px;
+    left: 14px;
+}
+.reflet{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.reflet>div{
+    width: 5px;
+    height: 5px;
+    position: relative;
+    top: 9px;
+    right: -16px;
+    background-color: rgba(255, 255, 255, 0.918);
+    transform: skew(-0.1turn);
+}
+
+.oeilG .reflet>div{
+    top: 9px;
+    width: 4px;
+    height: 5px;
+    background-color: rgba(255, 255, 255, 0.842);
+}
+
+.paupiere{
+    height: 30px;
+    width: 58px;
+    border-radius: 50% 50% 0 0 / 30px 30px 0 0;
+    position: relative;
+    top: -6px;
+    right: 4px;
+    box-shadow: 0 1px 1px black;
+    background: radial-gradient(ellipse at 120% -20%, #d6905e, #86471c);
+}
+
+.paupiereD{
+    top:-9px;
+    transform: rotate(-2deg);
+}
+.bouche>.fond{
+    background: radial-gradient(ellipse at 50% 50%,  rgb(26, 26, 26) , rgb(71, 71, 71) 90%, transparent 90%, transparent);
+    width: 150px;
+    height: 50px;
+    position: absolute;
+    
+    left: 350px;
+    bottom: 265px;
+
+}
+.dents{
+    width: 150px;
+    height: 21px;
+    background-color: blanchedalmond;
+    position: absolute;
+    
+    left: 350px;
+    transform: rotate(5deg);
+}
+
+.dentsB{
+    bottom: 265px;
+    transform: rotate(2deg);
+    border-radius: 0 0 100% 100%;
+}
+.dentsH{
+    bottom: 303px;
+    border-radius: 100% 100% 0 0;
+}
+.levres{   
+    width: 600px;
+    height: 170px;
+
+    position: absolute;
+    left: 125px;
+}
+
+.levresH{
+    background: radial-gradient(ellipse at 50% -30px, transparent 20.5%, rgb(53, 53, 53) 21%, rgb(143, 31, 31) 21%,rgb(167, 35, 35),   rgb(158, 34, 34) 27%, transparent 28%);
+    transform: rotate(180deg);
+
+    bottom: 295px;
+}
+
+.levresB{
+    background: radial-gradient(ellipse at 50% -30px, transparent 20.5%, rgb(53, 53, 53) 21%, rgb(143, 31, 31) 21%,rgb(167, 35, 35),   rgb(158, 34, 34) 27%, transparent 28%);
+    bottom: 125px;
+}
+
+.moustache{
+    z-index: 1;
+    width: 246px;
+    height: 45px;
+    position: absolute;
+    left: 302px;
+    bottom: 315px;
+    background: linear-gradient(-4deg, rgb(70, 70, 70), rgb(12, 12, 12));
+    border-radius: 100% 100% 0 0 / 100px 100px 0 0;
+    transform: rotate(-3deg);
+    box-shadow: 0 1px 2px black;
+}
+
+.nez{
+    width: 90px;
+    height: 68px;
+    border-radius: 100%;
+    background: radial-gradient(ellipse at 50% 30%, rgb(156, 40, 40) 20%, rgb(126, 44, 44));
+    position: absolute;
+    left: 373px;
+    top: 365px;
+    box-shadow: 0 2px 3px black;
+}
+
+.bras{
+    width: 300px;
+    height: 360px;
+    
+    position: absolute;
+}
+
+.brasG{
+    transform: rotate(185deg);
+    background: radial-gradient(ellipse at 0px 0px, transparent 20%,rgb(180, 180, 180) 20%,  rgb(206, 206, 206) 25%, transparent 25%);
+    left: -35px;
+    top: 140px;
+}
+.brasD{
+    transform: rotateX(180deg) rotate(5deg);
+    background: radial-gradient(ellipse at 0px 0px, transparent 20%,rgb(194, 194, 194) 20%,  rgb(219, 219, 219) 25%, transparent 25%);
+    right: -25px;
+    top: 134px;
+}
+
+.mains{
+    height: 30px;
+    width: 26px;
+    background-color: blanchedalmond;
+    border-radius: 10%;
+    position: absolute;
+
+}
+
+.mainR{
+    transform: rotateY(180deg) rotate(3deg);
+    bottom: 274px;
+    right: 150px;
+}
+
+.mainL{
+    bottom: 270px;
+    left: 140px;
+    transform: rotate(5deg);
+}
+
+.mains>div{
+    display: flex;
+}
+
+.doigts{
+    height: 25px;
+    width: 25%;
+    position: relative;
+    border-radius: 0 0 50% 50% ;
+    background-color: blanchedalmond;
+    top: 28px;
+    margin-right: 1px;
+}
+
+.pouce{
+    height: 10px;
+    width: 25px;
+    position: absolute;
+    right: -15px;
+    top: 8px;
+    transform: rotate(60deg);
+
+    border-radius: 0  50% 50% 0;
+    background-color: blanchedalmond;
+}
+
+
+.pieds{
+    height: 80px;
+    width: 70px;
+    
+    position: absolute;
+    bottom: 145px;
+    border-radius: 35px 35px 5px 5px / 80px 80px 5px 5px;
+    box-shadow: 0 1px 2px black;
+}
+
+.piedL{
+    left: 320px;
+    background: radial-gradient(ellipse at 35% -40%, rgb(0, 0, 0), transparent 50%), radial-gradient(ellipse at 70% 40%, rgb(91, 91, 175) 20%, blue);
+    transform: rotate(2deg);
+}
+
+.piedR{
+    left: 430px;
+    background:  radial-gradient(ellipse at 27% -40%, rgb(47, 27, 15), transparent 50%), radial-gradient(ellipse at 70% 30%, rgb(91, 91, 175) 20%, blue);
+    transform: rotate(-2deg);
+}
